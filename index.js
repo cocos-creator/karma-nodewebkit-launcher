@@ -52,8 +52,8 @@ NodeWebkitBrowser.prototype = {
 
   DEFAULT_CMD: {
     linux: path.normalize(__dirname + '/../.bin/nodewebkit'),
-    darwin: path.normalize(__dirname + '/../nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit'),
-    win32: path.normalize(__dirname + '/../nodewebkit/nodewebkit/nw.exe')
+    darwin: path.normalize(__dirname + '/node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit'),
+    win32: path.normalize(__dirname + '/node_modules/nodewebkit/nodewebkit/nw.exe')
   },
 
   ENV_CMD: 'NODEWEBKIT_BIN'
