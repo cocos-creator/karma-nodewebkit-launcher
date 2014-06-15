@@ -41,6 +41,7 @@ var NodeWebkitBrowser = function(baseBrowserDecorator, args) {
         fs.writeFile(PACKAGE_JSON, JSON.stringify(options), callback);
       }],
       'exec': ['index.html:write', 'package.json:write', function(callback) {
+        process.env.NODE_PATH = MODULE_PATH;
         self._execCommand(self._getCommand(), [STATIC_PATH]);
       }]
     });
